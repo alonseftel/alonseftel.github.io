@@ -3095,10 +3095,10 @@ let LoginService = class LoginService {
         this.client = client;
     }
     login(email, password, type) {
-        return this.client.post("https://alonseftel.github.io/http://localhost:8080/login/" + email + "/" + password + "/" + type, null, { responseType: 'text' });
+        return this.client.post("http://localhost:8080/login/" + email + "/" + password + "/" + type, null, { responseType: 'text' });
     }
     logout() {
-        return this.client.delete("https://alonseftel.github.io/http://localhost:8080/logout/");
+        return this.client.delete("http://localhost:8080/logout/");
     }
 };
 LoginService.ctorParameters = () => [
