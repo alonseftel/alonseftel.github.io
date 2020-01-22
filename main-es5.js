@@ -94,7 +94,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<style>\n    body,\n    html {\n        height: 100%;\n    }\n\n    .bg {\n        background-image: url(\"assets/admin.jpg\");\n\n        height: 100%;\n\n        background-position: center;\n        background-repeat: no-repeat;\n        background-size: cover;\n    }\n</style>\n\n<body>\n    <div class=\"bg\">\n        <div>\n            delete company <br>\n            <div>\n                <input type=\"number\" placeholder=\"number\" [(ngModel)]=\"company.id\">\n                <input type=\"button\" value=\"Delete\" (click)=\"deleteCompany()\">\n                <br >\n            <br > \n            <br > \n \n            <a routerLink=\"/admin\">back</a>\n            </div>\n        </div>\n    </div>\n</body>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<style>\n    body,\n    html {\n        height: 100%;\n    }\n\n    .bg {\n        background-image: url(\"assets/admin.jpg\");\n\n        height: 100%;\n\n        background-position: center;\n        background-repeat: no-repeat;\n        background-size: cover;\n    }\n</style>\n\n<body>\n    <div class=\"bg\">\n        <div>\n            delete company <br>\n            <div>\n                <input type=\"number\" placeholder=\"number\" [(ngModel)]=\"company.id\">\n                <input type=\"button\" value=\"Delete\" (click)=\"deleteCompany()\">\n                <br >\n            <br > \n            <br > \n \n            <a routerLink=\"/admin\">back</a>\n            </div>\n        </div> \n    </div>\n</body>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/delete-coupon/delete-coupon.component.html": 
@@ -2746,10 +2746,10 @@
                     this.client = client;
                 }
                 LoginService.prototype.login = function (email, password, type) {
-                    return this.client.post("http://localhost:8080/login/" + email + "/" + password + "/" + type, null, { responseType: 'text' });
+                    return this.client.post("https://alonseftel.github.io/http://localhost:8080/login/" + email + "/" + password + "/" + type, null, { responseType: 'text' });
                 };
                 LoginService.prototype.logout = function () {
-                    return this.client.delete("http://localhost:8080/logout/");
+                    return this.client.delete("https://alonseftel.github.io/http://localhost:8080/logout/");
                 };
                 return LoginService;
             }());
